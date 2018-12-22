@@ -6,6 +6,12 @@
     "paths": {
       "@state/*": [
         "app/state/*"
+      ],
+      "@movies/*": [
+        "app/movies/*"
+      ],
+      "@shared/*": [
+        "app/shared/*"
       ]
     },
     "sourceMap": true,

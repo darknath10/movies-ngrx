@@ -1,0 +1,18 @@
+<div class="container-fluid p-1">
+  <div class="row">
+    <div class="col">
+      <form [formGroup]="searchMovieForm">
+        <mat-form-field appearance="outline" class="w-100">
+          <mat-label>Search Movies via TMDB API</mat-label>
+          <mat-icon matPrefix>search</mat-icon>
+          <input type="text" matInput formControlName="term" (input)="onSubmit()">
+        </mat-form-field>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <pre>{{searchResults$ | async | json}}</pre>
+    </div>
+  </div>
+</div>
