@@ -9,7 +9,7 @@
       "projectType": "application",
       "prefix": "ngm",
       "schematics": {
-        "@schematics/angular:component": {
+        "@ngrx/schematics:component": {
           "styleext": "scss",
           "spec": false
         },
@@ -154,5 +154,8 @@
       }
     }
   },
-  "defaultProject": "ngrxMovies"
+  "defaultProject": "ngrxMovies",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }
